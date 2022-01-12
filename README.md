@@ -41,7 +41,7 @@ optional arguments:
 4) The daily new data is also in output file. They are called ConfirmedCases_daily_new_cases,
     Deaths_daily_new_cases, Recovered_daily_new_cases. The .csv files are the data and the 
     .png files are the graphs. 
-5) If the user does not want to run the script then they can go to https://simondmurray.github.io/
+5) If the user does not want to run the script then they can go to https://simondmurray.github.io/Covid19_outbreak/
     which is where I automatically upload the data to.
 6) The daily report data is in a line graph rather than a bar graph so that each regions new daily cases can be compared. I       feel this is more useful as it can show how different regions are being affected daily, rather than the world as a whole       (which will not be representative for each individual region).  
 
