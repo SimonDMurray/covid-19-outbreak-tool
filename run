@@ -1,0 +1,15 @@
+#!/bin/bash
+source /Users/sm42/Sanger/miniconda3/bin/activate covid19
+cd /Users/sm42/University/2019.20/SoftwareDev/coursework/covid19-graphs-SimonDMurray/
+/Users/sm42/Sanger/miniconda3/envs/covid19/bin/pytest /Users/sm42/University/2019.20/SoftwareDev/coursework/covid19-graphs-SimonDMurray/covid19_graphs/tests/*.py
+/Users/sm42/Sanger/miniconda3/envs/covid19/bin/python /Users/sm42/University/2019.20/SoftwareDev/coursework/covid19-graphs-SimonDMurray/deployment_script.py
+covid19_graphs output
+/usr/bin/git pull
+/usr/bin/git add .
+/usr/bin/git commit -m 'CRON Automatic Git Commit'
+/usr/bin/git push
+cd /Users/sm42/University/2019.20/SoftwareDev/coursework/SimonDMurray.github.io
+/usr/bin/git pull
+/usr/bin/git add .
+/usr/bin/git commit -m 'CRON Automatic Git Commit'
+/usr/bin/git push
